@@ -11,6 +11,3 @@ router.get('*', (_req, res) => {
   });
 
 export default router;
-router.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, '../../../client/dist/index.html'));
-  });
