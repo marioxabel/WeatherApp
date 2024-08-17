@@ -2,5 +2,13 @@
 	{
 		"name": "denver",
 		"id": "d0a5c391-0599-494b-a260-f7a021e5ddc5"
+	},
+	{
+		"name": "guadalajara",
+		"id": "d89f3e24-8e3c-4fe2-bfbb-c36fef2f4a05"
+	},
+	{
+		"name": "Buenos aires",
+		"id": "5ce23748-d03e-4755-aed2-e198c23e4bd0"
 	}
 ]
