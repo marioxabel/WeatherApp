@@ -108,7 +108,7 @@ class WeatherService {
     const date = new Date(data.list[0].dt * 1000).toLocaleDateString(); // Convert to local date string
     const icon = data.list[0].weather[0].icon;
     const iconDescription = data.list[0].weather[0].description;
-    const tempF = (data.list[0].main.temp - 273.15) * 9 / 5 + 32; // Convert from Kelvin to Fahrenheit
+    const tempF = parseFloat(((data.list[0].main.temp - 273.15) * 9 / 5 + 32).toFixed(2)); // Convert to number and Convert from Kelvin to Fahrenheit
     const windSpeed = data.list[0].wind.speed;
     const humidity = data.list[0].main.humidity;
 
@@ -128,7 +128,7 @@ class WeatherService {
         const formattedDate = new Date(entry.dt * 1000).toLocaleDateString(); // Format date for display
         const icon = entry.weather[0].icon;
         const iconDescription = entry.weather[0].description;
-        const tempF = (entry.main.temp - 273.15) * 9 / 5 + 32; // Convert from Kelvin to Fahrenheit
+        const tempF = parseFloat(((entry.main.temp - 273.15) * 9 / 5 + 32).toFixed(2)); // Convert from Kelvin to Fahrenheit
         const windSpeed = entry.wind.speed;
         const humidity = entry.main.humidity;
 
